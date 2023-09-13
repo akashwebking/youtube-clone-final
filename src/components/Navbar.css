@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&family=Noto+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500&family=Rubik:wght@400;500&family=Rye&family=Sen:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+}
+/* ----------------------Navbar Start-------------------------- */
+.flex-div {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+nav {
+  padding: 6px 2%;
+  background-color: rgb(16, 14, 14);
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  position: fixed;
+  color: #fff;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.right-side {
+  width: 25px;
+  margin-right: 25px;
+}
+
+nav .left-side .menubar {
+  width: 22px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.left-side img {
+  width: 90px;
+  cursor: pointer;
+}
+
+.search-box:hover {
+  border-color: rgb(31, 53, 255);
+}
+.search-box {
+  border: 1px solid #5a5a5a;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+.middle .search-box input {
+  padding-left: 20px;
+  width: 500px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.right-side i:hover {
+  border-radius: 50%;
+  background-color: rgba(90, 90, 90, 0.6);
+}
+
+.right-side {
+  margin-right: 150px;
+}
+
+.right-side i {
+  cursor: pointer;
+  width: 50px;
+  padding: 5px;
+  margin-right: 35px;
+}
+
+.search-box button:hover {
+  background-color: #5a5a5a;
+}
+
+.search-box button {
+  padding: 6px 22px;
+  background-color: rgba(90, 90, 90, 0.5);
+  border-radius: 0 25px 25px 0;
+}
+
+.middle > button {
+  background-color: rgba(90, 90, 90, 0.5);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.middle > button:hover {
+  background-color: rgba(90, 90, 90, 1);
+}
+/* ----------------------Navbar End-------------------------- */
+/* ----------------------Side bar Start-------------------------- */
+
+aside {
+  width: 5%;
+  padding-left: 2.2%;
+  background-color: rgb(16, 14, 14);
+  height: 100vh;
+  position: fixed;
+  overflow-x: hidden;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  padding-top: 80px;
+  transition: 0.3s ease;
+}
+aside.activate {
+  width: 15%;
+}
+
+.navlinks .icon {
+  margin-right: 25px;
+  font-size: 1.2rem;
+}
+
+.navlinks:hover {
+  background-color: rgba(90, 90, 90, 0.5);
+  border-radius: 4px;
+}
+
+.active {
+  background-color: rgba(90, 90, 90, 0.5);
+  border-radius: 4px;
+}
+
+.navlinks {
+  padding: 8px 3px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  margin-right: 0.75rem;
+  transition: 0.3s ease;
+}
+
+hr.false {
+  display: none;
+}
+
+.navlinks.false {
+  margin-bottom: 3rem;
+  transition: 0.3s ease;
+}
+
+.navlinks span.false {
+  display: none;
+  transition: 0.3s ease;
+}
+
+.navlinks .icon.false {
+  display: none;
+  transition: 0.3s ease;
+}
+/* ----------------------Side bar End-------------------------- */
+
+@media (max-width: 900px) {
+  .middle .search-box input {
+    padding-left: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  /* .left-side img {
+        display: none;
+    } */
+
+  .right-side {
+    margin-right: 20px;
+  }
+
+  .right-side i {
+    cursor: pointer;
+    width: 35px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+
+  .right-side i:hover {
+    border-radius: 50%;
+    background-color: #5a5a5a;
+  }
+  .small {
+    display: none;
+  }
+  .left-side img {
+    width: 80px;
+  }
+  nav .left-side .menubar {
+    margin-right: 15px;
+  }
+  .search-box button:hover {
+    background-color: #5a5a5a;
+  }
+  .search-box button {
+    padding: 6px 12px;
+  }
+  aside {
+    width: 6%;
+    padding-left: 2.3%;
+
+    padding-top: 80px;
+    color: white;
+  }
+
+  aside.activate {
+    width: 18%;
+  }
+
+  .navlinks {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  aside {
+    width: 10%;
+    padding-left: 2.5%;
+
+    padding-top: 80px;
+    color: white;
+  }
+
+  aside.activate {
+    width: 34%;
+  }
+
+  .navlinks {
+    overflow-x: hidden;
+    margin-right: 0.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .left-side img {
+    display: none;
+  }
+  aside {
+    width: 8%;
+    padding-left: 2.6%;
+
+    padding-top: 80px;
+    color: white;
+  }
+
+  aside.activate {
+    width: 30%;
+  }
+
+  .navlinks {
+    overflow-x: hidden;
+  }
+
+  .navlinks {
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,28 @@
+/* Add these styles to your CSS file */
+.like-component {
+  display: flex;
+  color: #fff;
+  cursor: pointer;
+  background: #5a5a5a;
+  border-radius: 10px;
+  align-self: stretch;
+}
+
+.like-icon,
+.dislike-icon {
+  margin-top: 8px;
+  font-size: 19px;
+  padding: 0 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.like-icon:hover,
+.dislike-icon:hover {
+  background-color: grey;
+}

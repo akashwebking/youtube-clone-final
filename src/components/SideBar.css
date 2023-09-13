@@ -1,0 +1,23 @@
+*{
+    margin :0;
+    padding: 0;
+    text-decoration : none;
+  }
+
+.link{
+    display: flex;
+    padding: 5%;
+    color : #fff;
+    gap: 10%;
+    align-items: center;
+}
+
+.link:hover{
+    scale: 0.9;
+    transition : all 0.5s;
+    background: rgb(0,0,0,0.5)
+}
+.active{
+    background-color: grey;
+    transition : all 0.5s;
+}

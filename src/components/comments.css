@@ -1,0 +1,65 @@
+.comments h4 {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.add-comment {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.add-comment img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.add-comment input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  width: 1000px;
+  padding-top: 10px;
+  background: transparent;
+  color: #fff;
+}
+
+.comments {
+  /* Existing styles for .comments container */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: "800px";
+}
+
+.comment-button {
+  margin-top: 8px; /* Adjust the margin as needed */
+  align-self: flex-end;
+}
+
+.new-comment {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.new-comment img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.new-comment h3 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.new-comment h3 span {
+  font-size: 12px;
+  color: #555;
+  font-weight: 500;
+  margin-left: 8px;
+}

@@ -1,0 +1,11 @@
+.vid-des {
+  margin: 15px 0;
+  background-color: #5a5a5a;
+  border-radius: 10px;
+}
+
+.vid-des p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #fff;
+}

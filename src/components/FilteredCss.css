@@ -1,0 +1,90 @@
+.filters {
+  position: relative;
+  left: 240px;
+  top: 15px;
+  width: calc(100% - 150px);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.filters::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+  flex: 0 0 auto;
+  border-radius: 50px;
+  background: #f0f0f0;
+  border: none;
+  text-transform: capitalize;
+  margin-right: 10px;
+  color: #242424;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.btn-group button {
+  font-size: 15px;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.right_btns div button {
+  font-size: 10px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .filters {
+    position: relative;
+    left: 25px;
+    top: 15px;
+    width: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .btn-group button {
+    font-size: 12px;
+    padding: 3px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,22 @@
+.ch span {
+  color: #fff;
+}
+
+h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.custom-button {
+  background-color: #5a5a5a;
+  color: white; /* You may want to set a text color for better visibility */
+  color: white;
+  border-radius: 5px; /* Add rounded corners */
+  padding: 10px 15px; /* Add padding for a better appearance */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.custom-button:hover {
+  background-color: grey; /* Change background color on hover */
+}
